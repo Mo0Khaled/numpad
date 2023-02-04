@@ -1,0 +1,19 @@
+name: numpad
+description: A new Flutter Package for numeric Keyboard.
+version: 0.0.1
+homepage: https://github.com/Mo0Khaled/numpad
+
+environment:
+  sdk: '>=2.18.1 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
