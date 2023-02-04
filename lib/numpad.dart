@@ -1,3 +1,3 @@
-library number_pad;
+library num_pad;
 
 export 'widgets/numPad.dart';
