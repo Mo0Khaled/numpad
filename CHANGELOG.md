@@ -1,3 +1,8 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+### First Version
+
+- Documented Code
+- Arabic Digits
+- flexibility to return it as english or arabic
+- flexible styles for the layout and Digits
