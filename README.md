@@ -46,4 +46,4 @@ an numeric Keyboard Layout supports english and arabic digits
 
 <img src="https://user-images.githubusercontent.com/55635328/216777871-0480f38b-b3a0-4c24-9b6e-1b119e17a3f2.png" width="400" height="600">
 
-also you can find The sample code can be found under the `example` package.
+also you can find The sample code under the `example` package.
