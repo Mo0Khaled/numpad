@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:numpad/extension/numbers.dart';
-import 'package:numpad/widgets/num_button.dart';
+import 'package:number_pad/extension/numbers.dart';
+import 'package:number_pad/widgets/num_button.dart';
 
 class NumPad extends StatelessWidget {
   /// Callback when number pressed

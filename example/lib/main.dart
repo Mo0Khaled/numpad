@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:numpad/widgets/numPad.dart';
+import 'package:number_pad/widgets/numPad.dart';
 
 void main() {
   runApp(const MyApp());

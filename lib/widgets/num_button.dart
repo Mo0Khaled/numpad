@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:numpad/extension/numbers.dart';
+import 'package:number_pad/extension/numbers.dart';
 
 class NumButton extends StatelessWidget {
   final String number;
