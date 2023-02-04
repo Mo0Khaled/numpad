@@ -1,39 +1,49 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Numpad
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+an numeric Keyboard Layout supports english and arabic digits
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Documented:** each property has a code documentation
+- Languages:** supports English and Arabic Digits
+- Flexibility:** smooth and flexible to modify anything
 
-## Getting started
+# Usage
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+| Parameter             |            Default             |                                                Description |
+|-----------------------|:------------------------------:|-----------------------------------------------------------:|
+| **onType**            |            required            |                             Callback when number pressed . |
+| **mainAxisAlignment** | MainAxisAlignment.spaceBetween |                                   for spacing horizontal . |
+| **padding**           |        horizontal = 30         |                            padding over the whole layout . |
+| **leftWidget**        |              null              |                          the widget at the left of the 0 . |
+| **rightWidget**       |              null              |                         the widget at the right of the 0 . |
+| **highlightColor**    |       Color(0xFFC9C9C9)        |                               on Holding press any number. |
+| **runSpace**          |               40               |                                         spacing vertical . |
+| **numberStyle**       |              null              |                                        custom number style |
+| **radius**            |               45               |                       radius for the shape of the number . |
+| **arabicDigits**      |             false              |                       Displays arabic digits if equal true |
+| **returnItAsEnglish** |             false              | it returns the digits as english even it's arabic digits . |
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
+#### Example
 ```dart
-const like = 'sample';
+ NumPad(
+   arabicDigits: true,
+   onType: (value) {
+     number += value;
+     setState(() {});
+   },
+   rightWidget: IconButton(
+   icon: const Icon(Icons.backspace),
+   onPressed: () {
+   if (number.isNotEmpty) {
+     number = number.substring(0, number.length - 1);
+      setState(() {});
+   }
+   },
+  ),
+);
 ```
 
-## Additional information
+<img src="https://user-images.githubusercontent.com/55635328/216777871-0480f38b-b3a0-4c24-9b6e-1b119e17a3f2.png" width="400" height="600">
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+also you can find The sample code can be found under the `example` package.
