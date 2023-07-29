@@ -54,8 +54,8 @@ class NumPad extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     void onTypeNumber(int number) {
-      String num = "";
-      if (arabicDigits == true) num = number.toString().toArabicNumbers;
+      String num = arabicDigits == true ? number.toString().toArabicNumbers : number.toString();
+
       onType(returnItAsEnglish == true ? num.toEnglishNumbers : num);
     }
 
